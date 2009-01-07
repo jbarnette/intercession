@@ -20,7 +20,7 @@ As a Gem:
 
 ## Example
 
-<script src="http://gist.github.com/44506.js"></script>
+Check out [this gist](http://gist.github.com/44506).
 
 ## Testing
 
