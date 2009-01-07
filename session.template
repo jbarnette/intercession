@@ -1,0 +1,4 @@
+module Transient
+  module Session
+  end
+end
