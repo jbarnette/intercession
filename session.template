@@ -1,4 +1,14 @@
 module Transient
+
+  # FIXME: docs
+
   module Session
+    # called right after the request starts
+    def after_initialize
+    end
+
+    # called right before the session is gonna be serialized
+    def before_save
+    end
   end
 end
