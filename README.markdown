@@ -31,7 +31,7 @@ Unit tests for your session model! Mix it in to a Hash and go to town:
       @session.extend Transient::Session
     end
     
-    def test_getting_user_will_find_user_from_user_id_key_if_available
+    test "getting user will find user from user_id key if available" do
       assert_nil @session.user
       @session[:user_id] = users(:default).id
       assert_equal users(:default), @session.user
