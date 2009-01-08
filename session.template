@@ -1,13 +1,21 @@
 module Transient
 
-  # FIXME: docs
+  # This module gets mixed in to the Rails session, and lets you
+  # treat the session more like a real object. Note that while most things
+  # this module is mixed in to are Hashlike, they vary in capabilitites.
+  # Safest to assume that the index[] op is the only thing that's available.
 
   module Session
-    # called right after the request starts
+    
+    # Called by a before_filter in the application controller. A good place
+    # to eagerly populate member models from IDs, if you're not feeling lazy.
+
     def after_initialize
     end
 
-    # called right before the session is gonna be serialized
+    # Called by an after_filter in the application controller. A good
+    # opportunity to turn heavy lists of stuff into IDs, etc.
+
     def before_save
     end
   end
