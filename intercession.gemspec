@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name     = "intercession"
   s.version  = "1.0.0"
-  s.date     = "2009-01-07"
+  s.date     = "2009-01-08"
   s.summary  = "Your session loves you. Treat her like a lady."
   s.authors  = ["John Barnette"]
   s.email    = "jbarnette@gmail.com"
