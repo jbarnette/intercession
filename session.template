@@ -6,7 +6,8 @@ module Transient
   # Safest to assume that the index[] op is the only thing that's available.
 
   module Session
-    
+    attr_accessor :controller, :request, :response
+
     # Called by a before_filter in the application controller. A good place
     # to eagerly populate member models from IDs, if you're not feeling lazy.
 
