@@ -6,7 +6,7 @@ lots of user and session-specific behavior.
 
 == Examples
 
-Check out [this gist](http://gist.github.com/44506).
+Check out this gist: http://gist.github.com/44506
 
 Unit tests for your session model! Mix it in to a Hash and go to town:
 
@@ -44,7 +44,7 @@ in one of your environment config files:
 
 == License
 
-Copyright 2009 John Barnette <jbarnette@rubyforge.org>
+Copyright 2009 John Barnette (jbarnette@rubyforge.org)
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
