@@ -3,8 +3,6 @@ require "hoe"
 
 require "./lib/intercession/version.rb"
 
-Hoe::SUPPORTED_TEST_FRAMEWORKS[:helper] = "helper"
-
 Hoe.new "intercession", Intercession::VERSION do |p|
   p.developer "John Barnette", "jbarnette@rubyforge.org"
 
@@ -14,5 +12,5 @@ Hoe.new "intercession", Intercession::VERSION do |p|
   p.extra_rdoc_files = [p.readme_file]
   p.need_tar         = false
   p.test_globs       = %w(test/**/*_test.rb)
-  p.testlib          = :helper
+  p.testlib          = :minitest
 end
