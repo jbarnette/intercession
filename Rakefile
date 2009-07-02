@@ -1,16 +1,13 @@
 require "rubygems"
 require "hoe"
 
-require "./lib/intercession/version.rb"
+Hoe.plugin :git
 
-Hoe.new "intercession", Intercession::VERSION do |p|
-  p.developer "John Barnette", "jbarnette@rubyforge.org"
+Hoe.spec "intercession" do
+  developer "John Barnette", "jbarnette@rubyforge.org"
 
-  p.url              = "http://github.com/jbarnette/intercession"
-  p.history_file     = "CHANGELOG.rdoc"
-  p.readme_file      = "README.rdoc"
-  p.extra_rdoc_files = [p.readme_file]
-  p.need_tar         = false
-  p.test_globs       = %w(test/**/*_test.rb)
-  p.testlib          = :minitest
+  self.extra_rdoc_files = FileList["*.rdoc"]
+  self.history_file     = "CHANGELOG.rdoc"
+  self.readme_file      = "README.rdoc"
+  self.testlib          = :minitest
 end

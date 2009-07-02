@@ -1,5 +1,9 @@
 = Intercession
 
+* http://github.com/jbarnette/intercession
+
+== Description
+
 Treat your sessions like models, not hashes. Intercession mixes a module into
 the session on each request, allowing you to nicely encapsulate (and test!)
 lots of user and session-specific behavior.
@@ -35,12 +39,10 @@ As a plugin:
 
 As a gem:
 
-    $ sudo gem install intercession
+    $ gem install intercession
 
-If you're using Intercession as a gem, add it to the gem dependencies
-in one of your environment config files:
-
-    config.gem "intercession", :lib => "intercession/lifecycle"
+If you're using Intercession as a gem, add it to your app's gem
+dependency mechanism.
 
 == License
 
