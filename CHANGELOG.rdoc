@@ -1,3 +1,11 @@
+=== 2.0.0 / 2009-09-28
+
+* Different approach. Supports Rails v2.2.2 and v2.3.4.
+* Rails 2.3 compatibility. [W. Andrew Loe III]
+* Switch to standard Hoe structure.
+* Standardizing the Rakefile.
+* Clean up example gist link.
+
 === 1.0.0 / 2009-02-24
 
 * Birthday!
