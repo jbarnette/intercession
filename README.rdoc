@@ -27,9 +27,11 @@ Unit tests for your session model! Mix it in to a Hash and go to town:
 
 == Installation
 
-Intercession works as a plugin or a gem. I've only used it as a plugin
-against Rails 2.2, though, so YMMV. If you install it as a plugin,
-it'll create you a stub session module in
+I've used Intercession with Rails v2.2.2 and v2.3.4. Anything else
+might give you hives.
+
+Intercession works as a plugin or a gem. If you install it as a
+plugin, it'll create you a stub session module in
 <tt>app/models/transient/session.rb</tt>. If you're using it as a gem,
 do it yourself. :)
 
@@ -37,12 +39,16 @@ As a plugin:
 
     $ script/plugin install git://github.com/jbarnette/intercession.git
 
-As a gem:
+As a gem (preferred):
 
     $ gem install intercession
 
 If you're using Intercession as a gem, add it to your app's gem
 dependency mechanism.
+
+After installation, add <tt>include Intercession</tt> to your
+ApplicationController. To enable Intercession in your tests, call
+<tt>Intercession.test!</tt> in your <tt>test_helper.rb</tt>.
 
 == License
 

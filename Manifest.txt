@@ -4,7 +4,4 @@ README.rdoc
 Rakefile
 install.rb
 lib/intercession.rb
-lib/intercession/lifecycle.rb
-lib/intercession/version.rb
-rails/init.rb
 session.template
