@@ -27,8 +27,9 @@ Unit tests for your session model! Mix it in to a Hash and go to town:
 
 == Installation
 
-I've used Intercession with Rails v2.2.2 and v2.3.4. Anything else
-might give you hives.
+I've used Intercession 2.x with Rails v2.2.2 and v2.3.4. People
+apparently use Intercession 3.x with Rails 3.x. Anything else might
+give you hives.
 
 Intercession works as a plugin or a gem. If you install it as a
 plugin, it'll create you a stub session module in
